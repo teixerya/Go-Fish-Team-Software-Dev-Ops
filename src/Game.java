@@ -64,4 +64,4 @@ public abstract class Game {
      */
     public abstract void declareWinner();
 
-}//end class
+}

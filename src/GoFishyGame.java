@@ -33,7 +33,6 @@ public class GoFishyGame extends Game {
         cpHand = new GroupOfCards();
         win = false;
         playerBooks = cpBooks = 0;
-
     }
 /*
  *This method is the instance of the game. The player is asked whether they would
@@ -135,7 +134,6 @@ public class GoFishyGame extends Game {
 
                 do {
                     System.out.println("Description\n\n");
-
                     System.out.println("Go Fishy is a card game played with a standard 52 card "
                             + "\ndeck but without the jokers.The object of the game is to "
                             + "\ncollect all 4 suits of a card to earn a \"Book\".  7 cards "
@@ -156,9 +154,7 @@ public class GoFishyGame extends Game {
 
                 play();
                 break;
-
         }
-
     }
     /*
      *This method sets up the game-loop. First the player plays their turn, then 
@@ -222,8 +218,8 @@ public class GoFishyGame extends Game {
     /*
      *A method to handle the player's turn. The player plays their turn, as long
      * as there is no winner yet. First, they are asked what value they would
-     * like to ask for. They recieve their answer, yes or no, and are either 
-     * given the sprecified cards, or they draw a card from the deck. If they 
+     * like to ask for. They receive their answer, yes or no, and are either
+     * given the specified cards, or they draw a card from the deck. If they
      * get a match, they get another turn.
      */
     public void playerTurn() {
@@ -438,22 +434,6 @@ public class GoFishyGame extends Game {
 
     }
 
-//   public String yesNo() 
-//   {
-//      String yesNo = new String();
-//         do 
-//         {
-//            yesNo = input.nextLine();
-//            if (!yesNo.equalsIgnoreCase("yes")
-//            	&& !yesNo.equalsIgnoreCase("no")) 
-//            {
-//               System.out.println("Yes or No only!  Try again");
-//            }
-//         }while (!yesNo.equalsIgnoreCase("yes")
-//         	&& !yesNo.equalsIgnoreCase("no"));
-//      
-//         return yesNo;
-//   }
     public static Scanner pauseScanner = new Scanner(System.in);
     /*
      *A method to use whenever we need to give the user a chance to read the 
